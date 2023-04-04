@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "En-rollin in deez nuts",
+  "author": "peepee poopoo",
+  "description": "Enroll",
+  "version": "1.0.0",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts":[
+    {
+      "matches":[ "https://acad.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
+        "https://acad.app.vanderbilt.edu/more/SearchClasses!input.action*",
+        "https://acad.app.vanderbilt.edu/more/SearchClasses.action*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "commands": {
+    "toggle-enroll": {
+        "suggested_key": {
+            "default": "Alt+X",
+            "mac": "Alt+X"
+        },
+        "description": "Toggle the enroller"
+    }
+},
+  "permissions": [
+    "management",
+    "activeTab",
+    "tabs",
+    "storage",
+    "identity",
+    "notifications",
+    "https://acad.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
+    "https://acad.app.vanderbilt.edu/more/StudentClass*"
+   ]
+}
