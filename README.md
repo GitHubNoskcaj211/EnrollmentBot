@@ -1,7 +1,7 @@
 If you are happy with this, support me [here :)](https://www.buymeacoffee.com/jacksonrusch)
 
 ## Example!
-![Enrollment-Bot-Example-Low-Res](https://user-images.githubusercontent.com/72236288/231269963-738fed66-3bf5-4e3b-94c9-93194d149288.gif)
+[![Example Video](https://user-images.githubusercontent.com/72236288/231272399-9ffbd095-120c-43a1-aeeb-1131a1aac8b8.png)](https://youtu.be/e--aPgJUGkE)
 
 ## Introduction
 This readme will explain how to install the extension, how to use it, and how it works (in case the YES website changes in the future). The extension will allow you to enroll instantly when the enrollment period opens by circumventing the front end (which is extremely slow on YES) and making registration HTML requests directly to the server.
