@@ -1,5 +1,8 @@
 If you are happy with this, support me [here :)](https://www.buymeacoffee.com/jacksonrusch)
 
+## Change Log
+10/30/2023 | Functional Change (requires reload) | Vanderbilt changed their URLs for the registration services. The bot has now been updated to reflect the new URL prefix.
+
 ## Example Video!
 [![Example Video](https://user-images.githubusercontent.com/72236288/231272399-9ffbd095-120c-43a1-aeeb-1131a1aac8b8.png)](https://youtu.be/e--aPgJUGkE)
 
