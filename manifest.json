@@ -10,9 +10,9 @@
   },
   "content_scripts":[
     {
-      "matches":[ "https://acad.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
-        "https://acad.app.vanderbilt.edu/more/SearchClasses!input.action*",
-        "https://acad.app.vanderbilt.edu/more/SearchClasses.action*"
+      "matches":[ "https://more.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
+        "https://more.app.vanderbilt.edu/more/SearchClasses!input.action*",
+        "https://more.app.vanderbilt.edu/more/SearchClasses.action*"
       ],
       "js": [
         "content.js"
@@ -36,7 +36,7 @@
     "storage",
     "identity",
     "notifications",
-    "https://acad.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
-    "https://acad.app.vanderbilt.edu/more/StudentClass*"
+    "https://more.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
+    "https://more.app.vanderbilt.edu/more/StudentClass*"
    ]
 }

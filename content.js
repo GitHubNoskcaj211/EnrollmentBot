@@ -13,7 +13,7 @@ function enroll() {
 	console.log('Attempting Enroll!');
 
 	var request = new XMLHttpRequest();
-	request.open("GET", "https://acad.app.vanderbilt.edu/more/StudentClass!getSavedClasses.action", true);
+	request.open("GET", "https://more.app.vanderbilt.edu/more/StudentClass!getSavedClasses.action", true);
 	request.send(null);
 	request.onreadystatechange = function() {
 		if (request.readyState == 4){
@@ -43,7 +43,7 @@ function enroll() {
 
 			console.log(term_code);
 			console.log(class_numbers);
-			register_url = 'https://acad.app.vanderbilt.edu/more/StudentClass!queueEnroll.action?selectedTermCode=' + term_code;
+			register_url = 'https://more.app.vanderbilt.edu/more/StudentClass!queueEnroll.action?selectedTermCode=' + term_code;
 			for(i = 0; i < class_numbers.length; i++){
 				register_url += '&enrollmentRequestItems%5B'+String(i)+'%5D.classNumber=' + class_numbers[i] + '&enrollmentRequestItems%5B'+String(i)+'%5D.waitList=true';
 			}
@@ -53,7 +53,7 @@ function enroll() {
 			.then(response=>{
 				job_id = response.jobId;
 				console.log('Submitted Job: ' + job_id)
-				fetch('https://acad.app.vanderbilt.edu/more/StudentClass!checkStatus.action?jobId='+job_id)
+				fetch('https://more.app.vanderbilt.edu/more/StudentClass!checkStatus.action?jobId='+job_id)
 				.then(data=>{return data.json()})
 				.then(response=>{
 					if(response){
@@ -71,7 +71,7 @@ function enroll() {
 }
 
 function fixEnrollmentNumbers() {
-	fetch('https://acad.app.vanderbilt.edu/more/StudentClass!getClassHoursSummary.action')
+	fetch('https://more.app.vanderbilt.edu/more/StudentClass!getClassHoursSummary.action')
 	.then(data=>{return data.json()})
 	.then(response=>{
 		document.getElementById('enrolledHours').innerText = response.enrolled.classHours;
