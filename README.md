@@ -1,6 +1,8 @@
 If you are happy with this, support me [here :)](https://www.buymeacoffee.com/jacksonrusch)
 
 ## Change Log
+11/02/2023 | Non-Functional Change | There were unnecessary permissions which were causing warning errors upon loading the extension. These permissions have been removed.
+
 10/30/2023 | Functional Change (requires reload) | Vanderbilt changed their URLs for the registration services. The bot has now been updated to reflect the new URL prefix.
 
 ## Example Video!

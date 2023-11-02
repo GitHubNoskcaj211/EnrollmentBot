@@ -35,8 +35,6 @@
     "tabs",
     "storage",
     "identity",
-    "notifications",
-    "https://more.app.vanderbilt.edu/more/SearchClasses!input.action?commodoreIdToLoad=*",
-    "https://more.app.vanderbilt.edu/more/StudentClass*"
+    "notifications"
    ]
 }
