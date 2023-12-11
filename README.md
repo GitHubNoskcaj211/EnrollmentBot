@@ -1,4 +1,5 @@
-If you are happy with this, support me [here :)](https://www.buymeacoffee.com/jacksonrusch)
+## Support
+If you are happy with this, consider supporting through [Venmo](https://venmo.com/u/Jackson-Rusch-1) or [Buy Me a Coffee](https://www.buymeacoffee.com/jacksonrusch).
 
 ## Change Log
 11/02/2023 | Non-Functional Change | There were unnecessary permissions which were causing warning errors upon loading the extension. These permissions have been removed.
